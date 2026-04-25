@@ -122,3 +122,49 @@ Die Kohortengröße entspricht:
 - Anzahl Kunden in Month 0
 
 ---
+
+## SQL-Validierung
+
+Die Logik wurde zunächst in SQL aufgebaut und geprüft.
+
+Dabei wurden:
+
+- die Kohorten bestimmt  
+- die Monatsabstände berechnet  
+- die Daten auf Kohorten- und Monatsebene aggregiert  
+- fehlende Kombinationen ergänzt  
+- und daraus die Retention Rate berechnet  
+
+Die SQL-Variante dient als Referenz für die Umsetzung in Excel.
+
+SQL-Dateien:
+
+link
+
+---
+
+## Umsetzung in Power Query
+
+Die gleiche Logik wurde anschließend in Power Query umgesetzt.
+
+Im Vergleich zu SQL gibt es dabei einige Einschränkungen, insbesondere bei der Erzeugung der Zeitstruktur.
+
+Für diese Analyse bedeutet das konkret:
+
+- die Monatswerte wurden explizit erzeugt (über eine erzeugte Zahlenliste in Power Query)  
+- die Kombination aus Kohorten und Monaten wurde über eine zusätzliche Spalte mit der Monatstabelle und anschließender Expansion aufgebaut  
+- die Daten wurden in mehreren Schritten zusammengeführt  
+
+Die Logik entspricht damit der SQL-Variante, die Umsetzung erfolgt jedoch mit den in Power Query verfügbaren Mitteln.
+
+---
+
+## Ergebnisdaten
+
+Die finale Tabelle enthält:
+
+- `cohort_month`  
+- `month_number`  
+- `active_customers`  
+- `cohort_size`  
+- `retention_rate`  
