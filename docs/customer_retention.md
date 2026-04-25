@@ -150,9 +150,9 @@ Die gleiche Logik wurde anschließend in Power Query umgesetzt.
 Im Vergleich zu SQL gibt es dabei einige Einschränkungen, insbesondere bei der Erzeugung der Zeitstruktur.
 
 Für diese Analyse bedeutet das konkret:
-
-- die Monatswerte wurden explizit erzeugt (über eine erzeugte Zahlenliste in Power Query)  
-- die Kombination aus Kohorten und Monaten wurde über eine zusätzliche Spalte mit der Monatstabelle und anschließender Expansion aufgebaut  
+ 
+- die Monate (0–8) wurden zunächst als eigene Tabelle erzeugt (über eine Zahlenliste in Power Query) 
+- diese Monatstabelle wurde anschließend in die Kohorten-Tabelle eingebracht und expandiert, sodass für jede Kohorte eine Zeile pro Monat entsteht
 - die Daten wurden in mehreren Schritten zusammengeführt  
 
 Die Logik entspricht damit der SQL-Variante, die Umsetzung erfolgt jedoch mit den in Power Query verfügbaren Mitteln.
