@@ -164,10 +164,4 @@ Excel-Datei:
 
 ## Ergebnisdaten
 
-Die finale Tabelle enthält:
-
-- `cohort_month`  
-- `month_number`  
-- `active_customers`  
-- `cohort_size`  
-- `retention_rate`  
+![Customer Retention – Power Query Result](../images/customer_retention_final.png)
