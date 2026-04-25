@@ -139,7 +139,7 @@ Die SQL-Variante dient als Referenz für die Umsetzung in Excel.
 
 SQL-Datei: 
 
-> [analysis/sql/customer_retention.sql](https://github.com/adamczapla/olist-cohort-analysis/blob/main/analysis/sql/customer_retention.sql)
+> [analysis/sql/customer_retention.sql](../analysis/sql/customer_retention.sql)
 
 ---
 
@@ -159,7 +159,7 @@ Die Logik entspricht damit der SQL-Variante, die Umsetzung erfolgt jedoch mit de
 
 Excel-Datei:
 
-> [analysis/excel/customer_retention.xlsx](https://github.com/adamczapla/olist-cohort-analysis/blob/main/analysis/excel/customer_retention.xlsx)
+> [analysis/excel/customer_retention.xlsx](../analysis/excel/customer_retention.xlsx)
 ---
 
 ## Ergebnisdaten
