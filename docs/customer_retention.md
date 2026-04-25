@@ -137,9 +137,9 @@ Dabei wurden:
 
 Die SQL-Variante dient als Referenz für die Umsetzung in Excel.
 
-SQL-Dateien:
+SQL-Datei: 
 
-link
+> [analysis/sql/customer_retention.sql](https://github.com/adamczapla/olist-cohort-analysis/blob/main/analysis/sql/customer_retention.sql)
 
 ---
 
@@ -157,6 +157,9 @@ Für diese Analyse bedeutet das konkret:
 
 Die Logik entspricht damit der SQL-Variante, die Umsetzung erfolgt jedoch mit den in Power Query verfügbaren Mitteln.
 
+Excel-Datei:
+
+> [analysis/excel/customer_retention.xlsx](https://github.com/adamczapla/olist-cohort-analysis/blob/main/analysis/excel/customer_retention.xlsx)
 ---
 
 ## Ergebnisdaten
