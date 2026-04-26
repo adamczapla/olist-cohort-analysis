@@ -64,3 +64,40 @@ Für jede Bestellung wird der Abstand zur ersten Bestellung berechnet:
 - `month_number = Monate seit erster Bestellung`
 
 ---
+
+### Bestimmung des ersten Wiederkaufs
+
+Für jeden Kunden wird ermittelt, in welchem Monat nach Month 0 der erste erneute Kauf erfolgt.
+
+Dabei werden nur Monate größer als 0 berücksichtigt.
+
+---
+
+### Kumulative Logik
+
+Auf Basis dieses ersten Wiederkaufs wird berechnet, wie viele Kunden bis zu einem bestimmten Monat mindestens einmal zurückgekehrt sind.
+
+Ein Kunde wird dabei nur einmal gezählt, basierend auf seinem ersten Wiederkauf.
+
+Beispiel:
+
+- Month 2 enthält alle Kunden mit erstem Wiederkauf in Month 1 oder Month 2  
+- Month 3 enthält alle Kunden mit erstem Wiederkauf in Month 1, 2 oder 3  
+
+---
+
+## SQL-Validierung
+
+Die Logik wurde zunächst in SQL umgesetzt und überprüft.
+
+Zentrale Schritte:
+
+- Bestimmung des ersten Wiederkaufs pro Kunde  
+- Aggregation auf Kohortenebene  
+- Berechnung kumulativer Werte über die Zeit  
+
+SQL-Datei:
+
+> [analysis/sql/cumulative_retention.sql](../analysis/sql/cumulative_retention.sql)
+
+---
