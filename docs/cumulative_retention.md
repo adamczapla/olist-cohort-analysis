@@ -101,3 +101,30 @@ SQL-Datei:
 > [analysis/sql/cumulative_retention.sql](../analysis/sql/cumulative_retention.sql)
 
 ---
+
+## Umsetzung in Power Query
+
+Die gleiche Logik wurde anschließend in Power Query umgesetzt.
+
+Im Vergleich zu SQL ergeben sich dabei zentrale Unterschiede.
+
+SQL erlaubt:
+
+- Window Functions  
+- Join-Bedingungen wie `>=`  
+
+Beides steht in Power Query nicht direkt zur Verfügung.
+
+Die kumulative Logik wurde daher über einen Self Join umgesetzt.
+
+Vorgehen:
+
+- Self Join auf Kohortenebene  
+- Vergleich der Monate über eine Custom Column (`>=`)  
+- Filterung auf `TRUE`  
+- anschließendes Gruppieren nach Kohorte und Monat  
+- Zählung eindeutiger Kunden pro Gruppe  
+
+So ergibt sich für jeden Monat die Anzahl der Kunden, die bis zu diesem Zeitpunkt mindestens einmal zurückgekehrt sind.
+
+---
