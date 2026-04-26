@@ -97,20 +97,18 @@ SQL-Datei:
 
 Die gleiche Logik wurde anschließend in Power Query umgesetzt.
 
-Im Vergleich zu SQL liegt der Unterschied hauptsächlich in der Filterung nach Aggregation.
+Der wichtigste Unterschied zur SQL-Variante liegt in der Filterung nach der Aggregation.
 
-SQL erlaubt:
+In SQL erfolgt dies über:
 
-- Filterung direkt über `HAVING count(*) > 1`
+> `HAVING count(*) > 1`
 
-In Power Query erfolgt dies in zwei Schritten:
+In Power Query wurde diese Logik über zwei separate Schritte umgesetzt:
 
-- Gruppierung nach Kunde und Kohorte zur Ermittlung der Bestellanzahl  
-- anschließende Filterung auf Kunden mit mehr als einer Bestellung  
+- Gruppierung nach Kunde und Kohorte zur Ermittlung der Bestellanzahl
+- anschließende Filterung auf Kunden mit mehr als einer Bestellung
 
-Erst danach wird auf Kohortenebene aggregiert.
-
-Verknüpfungen erfolgen in mehreren Schritten, da Joins in Power Query jeweils nur zwischen zwei Tabellen möglich sind.
+Die daraus resultierende Tabelle enthält nur noch Repeat Customers und dient als Grundlage für die finale Berechnung der Repeat Rate.
 
 Excel-Datei:
 
