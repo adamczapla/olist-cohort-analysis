@@ -72,7 +72,7 @@ in the first months after the initial purchase, and after that the growth slows 
 
 Overall, there is no strong long-term effect, which points to weak customer retention.
 
---
+---
 
 ## Repeat Customer Rate
 
