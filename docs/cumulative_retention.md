@@ -128,3 +128,7 @@ Vorgehen:
 So ergibt sich für jeden Monat die Anzahl der Kunden, die bis zu diesem Zeitpunkt mindestens einmal zurückgekehrt sind.
 
 ---
+
+## Ergebnisdaten
+
+![Cumulative Retention (Power Query)](../images/cumulative_retention_final.png)
