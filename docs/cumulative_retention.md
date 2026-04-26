@@ -127,6 +127,10 @@ Vorgehen:
 
 So ergibt sich für jeden Monat die Anzahl der Kunden, die bis zu diesem Zeitpunkt mindestens einmal zurückgekehrt sind.
 
+Excel-Datei:
+
+> [analysis/excel/cumulative_retention.xlsx](../analysis/excel/cumulative_retention.xlsx)
+
 ---
 
 ## Ergebnisdaten
