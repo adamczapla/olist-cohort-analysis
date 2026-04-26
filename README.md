@@ -1,3 +1,17 @@
+# Customer Behavior Analysis
+
+This project analyzes customer behavior based on the Brazilian Olist e-commerce dataset using Excel (Power Query) as 
+the main analysis tool, supported by SQL for validation.
+
+It examines how customers return after their first purchase and how customer retention develops over time.
+
+The analysis includes:
+- Customer Retention
+- Cumulative Retention
+- Repeat Customer Rate
+
+---
+
 ## Customer Retention
 
 This analysis looks at how many customers make another purchase after their first order and how this behavior changes over time.
@@ -124,6 +138,8 @@ The analysis shows that customer retention is generally weak. Only a small share
 
 Even though the number of customers increases in later cohorts, the repeat rate remains mostly unchanged. This suggests 
 that growth mainly comes from new customers, not from returning ones.
+
+---
 
 ## Dataset
 
