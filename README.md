@@ -124,3 +124,36 @@ The analysis shows that customer retention is generally weak. Only a small share
 
 Even though the number of customers increases in later cohorts, the repeat rate remains mostly unchanged. This suggests 
 that growth mainly comes from new customers, not from returning ones.
+
+## Dataset
+
+> This project uses the [Olist Brazilian E-Commerce dataset from Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+
+---
+
+## Technical Notes
+
+The analysis is implemented in Excel using Power Query.
+
+SQL was used to validate the logic and calculations. The queries run on a PostgreSQL database.
+
+---
+
+## Environment
+
+The Excel files were created and tested on macOS (Excel 365). 
+
+Some Power Query features may behave differently on other platforms.
+
+---
+
+## Data Preparation
+
+The data used in this project was cleaned and prepared in a separate SQL-based project.
+
+This includes:
+- schema design (`analytics` schema)
+- data cleaning
+- validation
+
+> For the full setup, see [olist-ecommerce-analysis](https://github.com/adamczapla/olist-ecommerce-analysis/tree/main)
